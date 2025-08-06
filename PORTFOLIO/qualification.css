@@ -1,0 +1,37 @@
+#table {
+    padding: 24px;
+    border-collapse: separate;
+}
+
+td,
+th {
+    padding: 20px;
+    width: 100%;
+
+    border-radius: 5px;
+    text-align: center;
+
+    background-color: antiquewhite;
+    border: 4px solid wheat;
+}
+
+th {
+    background-color: rgb(177, 100, 41);
+    color: black;
+}
+
+body {
+    background-color: rgb(44, 43, 43);
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+}
+.qua{
+    color: bisque;
+    border: 2px solid wheat;
+}
+h3{
+    color: blanchedalmond;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECTS </title>
+<style>
+    body{
+        background-color: rgb(47, 47, 48);
+    }
+    h1{
+        color:rgba(81, 45, 21, 0.842) ;
+        text-align: center;
+        border : 4px solid black ;
+        background-color: rgb(138, 136, 136);
+    }
+</style>
+</head>
+<body>
+    <h1 id="para"></h1>
+</body>
+<script>
+    let i = 0;
+let text = " SORRY GENTLEMEN  but NO PROJECTS YET TO DISPLAY !";
+let spd = 60;
+function runTW() {
+    if (i < text.length) {
+        document.getElementById("para").innerHTML += text.charAt(i);
+        i++;
+
+        setTimeout(runTW, spd);
+    }
+}
+window.onload = runTW;
+
+
+</script>
+</html>

@@ -1,0 +1,127 @@
+/* Apply a full-screen gradient background with animation */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #6a11cb, #2575fc, #ff6ec4, #7873f5);
+  background-size: 400% 400%;
+  animation: gradientFlow 15s ease infinite;
+  color: white;
+  text-align: center;
+}
+
+/* Container for your page content */
+.content {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Background gradient animation */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Taskbar Styles */
+.taskbar {
+  position: fixed;
+  top: 0;
+  /* move to top */
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  z-index: 1000;
+}
+
+
+.taskbar button {
+  padding: 10px 20px;
+  background: #48014a;
+  color: rgb(249, 251, 252);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.taskbar button:hover {
+  background: #555;
+}
+
+/* Fullscreen Task Windows */
+.task-window {
+  position: fixed;
+  top: 50px;
+  /* account for taskbar height */
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 50px);
+  /* avoid overlapping the taskbar */
+  background: rgba(0, 0, 0, 0.92);
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+
+.task-header {
+  background: #222;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.task-header button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.task-body {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  color: #eee;
+  background: #1a1a1a;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

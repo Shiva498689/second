@@ -1,0 +1,30 @@
+
+.buttons button{
+  padding: 7px 30px;
+  border-radius: 8px;
+  border: 4px solid rgb(16, 12, 12);
+  color: black;
+  background-color: blanchedalmond;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+body{
+  background-color: black;
+}
+.buttons button:hover{
+  background-color: rgb(69, 71, 70);
+}
+.buttons{
+  display: flex;
+  gap: 300px;
+  
+  border: 4px solid white ;
+}
+h3{
+  color: rgb(15, 15, 15);
+text-align: center;
+}
+body{
+  background-image: url(https://previews.123rf.com/images/wisiel/wisiel1708/wisiel170800029/84316174-side-view-of-a-happy-business-man-welcoming-you-while-smiling-on-white-background.jpg);
+
+}

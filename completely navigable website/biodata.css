@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    color:blanchedalmond;
+    background-color: black;
+}
+#bio{
+    text-align: left;
+    color: blanchedalmond;
+    
+}
+body{
+    background-color: rgb(53, 51, 51);
+}
+img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    
+    border-radius: 110px;
+    border: 3px solid wheat;
+    top: 70px;
+    right: 300px;
+       
+}
+figcaption{
+    position: absolute;
+    top : 270px;
+    right:300px;
+    color:bisque;
+}
+#para{
+    color: blanchedalmond;
+}
