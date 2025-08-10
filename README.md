@@ -8,3 +8,4 @@ Guidelines for giving input
       
  <br>*** for calculating exponent of a number
      Sample input: exp(____) your number in blank space 
+     <br> if above instructions are not followed than error will be thrown
