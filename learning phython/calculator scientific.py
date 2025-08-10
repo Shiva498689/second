@@ -4,20 +4,21 @@ import math
 
 time.sleep(1)
 s= input("input  :")
+
 if(s[0:3]=="exp"):
    num1=float(s[4:(len(s)-1)])
    print("Output :",math.exp(num1))
 
 if(s[0:3]=="sin"):
-   num1= float(s[4:(len(s)-1)])
+   num1= (float(s[4:(len(s)-1)]))*(math.pi/180)
    print("Output :",(math.sin(num1)))
    exit()
 if(s[0:3]=="tan"):
-   num1= float(s[4:(len(s)-1)])
+   num1= (float(s[4:(len(s)-1)]))*(math.pi/180)
    print("Output :",(math.tan(num1)))
    exit()
 if(s[0:3]=="cos"):
-   num1= float(s[4:(len(s)-1)])
+   num1= (float(s[4:(len(s)-1)]))*(math.pi/180)
    print("Output :",(math.cos(num1)))
    exit()
 if(s[0:4]=="asin"):
