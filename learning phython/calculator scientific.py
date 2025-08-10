@@ -39,21 +39,27 @@ if(s[0:2]=="ln"):
   print("Output: ",ln)
   exit()
 
-else:
- i= s.find(" ")
- num1= float(s[0:i])
- num2= float(s[i+3:len(s)])
- operator= s[i+1:i+2]
+elif(s[0]=="0"or s[0]=="1"or s[0]=="2"or s[0]=="3"or s[0]=="4"or s[0]=="5"or s[0]=="6"or s[0]=="7"or s[0]=="8"or s[0]=="9"):
+ len=len(s)
+ if(s[len-1]=="0"or s[len-1]=="1"or s[len-1]=="2"or s[len-1]=="3"or s[len-1]=="4"or s[len-1]=="5"or s[len-1]=="6"or s[len-1]=="7"or s[len-1]=="8"or s[len-1]=="9"):
+   
+
+                          i= s.find(" ")
+                          num1= float(s[0:i])
+                          num2= float(s[i+3:len(s)])
+                          operator= s[i+1:i+2]
  
- if(operator=='+'):
-     print("output :",(num1+num2))
- elif(operator=='-'):
-     print("output :",(num1-num2))
- elif(operator=='*'):
-     print("output :",(num1*num2))
- elif(operator=='/'):
-     print("output :",(num1/num2))
- elif(operator=='%'):
-     print("output :",(num1%num2))
- elif(operator=='^'):
-     print("output :",(num1**num2)) 
+                          if(operator=='+'):
+                             print("output :",(num1+num2))
+                          elif(operator=='-'):
+                             print("output :",(num1-num2))
+                          elif(operator=='*'):
+                             print("output :",(num1*num2))
+                          elif(operator=='/'):
+                             print("output :",(num1/num2))
+                          elif(operator=='%'):
+                             print("output :",(num1%num2))
+                          elif(operator=='^'):
+                             print("output :",(num1**num2))
+else:
+    print('please read the guidelines at Read.md and than retry')                              
